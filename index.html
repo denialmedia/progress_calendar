@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year Progress Calendar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="calendar-container">
+
+        <div class="progress-info" id="progressText">Loading...</div>
+        
+        <!-- You Are Here Indicator -->
+        <div class="you-are-here" id="youAreHere">
+            <span class="label" id="hereLabel">YOU ARE HERE</span>
+            <div class="arrow"></div>
+        </div>
+
+        <!-- Timeline Bar -->
+        <div class="timeline">
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <ul class="month-list" id="monthList">
+                <li>Jan</li>
+                <li>Feb</li>
+                <li>Mar</li>
+                <li>Apr</li>
+                <li>May</li>
+                <li>Jun</li>
+                <li>Jul</li>
+                <li>Aug</li>
+                <li>Sep</li>
+                <li>Oct</li>
+                <li>Nov</li>
+                <li>Dec</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>Today is: <span id="currentDate"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
